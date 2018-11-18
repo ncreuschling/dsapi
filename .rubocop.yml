@@ -1,0 +1,16 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5
+  ExtraDetails: true
+  DisplayStyleGuide: true
+  DisplayCopNames: true
+  Exclude:
+    - dsapi.gemspec
+    - Guardfile
+    - vendor/bundle/**/*
+
+Naming/AccessorMethodName:
+  Enabled: false
+Style/Documentation:
+  Enabled: false

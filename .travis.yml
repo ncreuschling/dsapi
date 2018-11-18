@@ -1,0 +1,31 @@
+---
+language: ruby
+rvm:
+  - 2.5.3
+  - 2.5.2
+  - 2.5.1
+  - 2.5.0
+  - 2.4.5
+  - 2.4.4
+  - 2.4.3
+  - 2.4.2
+  - 2.4.1
+  - 2.4.0
+  - 2.3.8
+  - 2.3.7
+  - 2.3.6
+  - 2.3.5
+  - 2.3.4
+  - 2.3.3
+  - 2.3.2
+  - 2.3.1
+  - 2.3.0
+sudo: false
+cache: bundler
+before_install:
+  - gem update --system
+  - gem install bundler -v 1.17.1
+script:
+  - bundle exec bundle-audit check --update
+  - bundle exec rubocop
+  - bundle exec rake
