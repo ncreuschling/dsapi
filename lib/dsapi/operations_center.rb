@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'dry/container/mixin'
+require 'dry/container'
 require 'dsapi/operations/parse_json_response'
 require 'dsapi/operations/setup_faraday'
 
