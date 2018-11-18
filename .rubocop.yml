@@ -9,8 +9,11 @@ AllCops:
     - dsapi.gemspec
     - Guardfile
     - vendor/bundle/**/*
+    - spec/dsapi/schema/**/*
 
 Naming/AccessorMethodName:
   Enabled: false
 Style/Documentation:
   Enabled: false
+Metrics/LineLength:
+  Max: 100

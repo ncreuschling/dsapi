@@ -45,6 +45,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'dry-configurable', '~> 0.7'
   spec.add_dependency 'dry-core', '~> 0.4'
+  spec.add_dependency 'dry-struct', '~> 0.6'
   spec.add_dependency 'dry-transaction', '~> 0.13'
   spec.add_dependency 'faraday', '~> 0.15'
 end
